@@ -20,6 +20,7 @@ It acts as an intermediary for requests from clients seeking resources from othe
 This project follows the standard Go project layout to ensure clean separation between the entry point and the business logic.
 
 ```bash
+proxy-server
 ├── main.go              # Application entry point
 │  
 ├── proxy
@@ -44,7 +45,7 @@ Go 1.21+
 
 ```bash
 git clone https://github.com/jdmwihia/proxy-server.git
-cd proxy-cache
+cd proxy-server
 ```
 
 2. Initialize dependencies:
@@ -56,5 +57,5 @@ go mod download
 3. Run the Server
 
 ```bash
-go run main.go
+go run .
 ```
