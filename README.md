@@ -43,7 +43,7 @@ Go 1.21+
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/jdmwihia/proxy-cache.git
+git clone https://github.com/jdmwihia/proxy-server.git
 cd proxy-cache
 ```
 
