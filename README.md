@@ -21,9 +21,8 @@ This project follows the standard Go project layout to ensure clean separation b
 
 ```bash
 proxy-server
-├── main.go              # Application entry point
-│  
-├── proxy
+├── main.go              # Application entry point 
+├── proxy/
 │   ├── server/          # Core proxy logic
 │   │   ├── proxy.go
 │   │   └── proxy_test.go # Unit tests for forwarding logic
