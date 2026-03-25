@@ -3,13 +3,16 @@ package server
 import (
 	"fmt"
 	"net/http"
+	"log"
 )
 
+func landing(w http.ResponseWriter, _ *http.Request) {
+	fmt.Fprint(w, "Hello! You've reached the Go server")
+}
+
 func Proxy() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Hello! You've reached the Go server")
-	})
+	http.HandleFunc("/", landing)
 
 	fmt.Println("Server starting on :8080...")
-	http.ListenAndServe(":8080", nil)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
