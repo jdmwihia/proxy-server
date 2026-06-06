@@ -1,3 +1,12 @@
+## Status
+
+**Working:** Basic HTTP proxying (GET, POST, etc.)
+
+**In Progress:** Caching layer, HTTPS support, better error handling
+
+This was my first Go project — a learning exercise in concurrency and networking.
+
+
 # Proxy Server
 
 ## Description
